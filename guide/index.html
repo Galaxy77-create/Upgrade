@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>UpGrade — Продуктовый гайд: интерактивный фитнес-дневник</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ======================= 1. COVER ======================= -->
+<section class="page blush" style="padding:0">
+  <div class="blob" style="width:420px;height:420px;background:#F1C6B8;opacity:.55;right:-120px;top:-90px"></div>
+  <div class="blob" style="width:260px;height:260px;background:#D9E3D4;opacity:.7;left:-90px;bottom:120px"></div>
+  <div class="blob" style="width:140px;height:140px;background:#E7AFA0;opacity:.35;left:300px;bottom:-40px"></div>
+
+  <div style="position:absolute;top:18mm;left:17mm;right:17mm;display:flex;justify-content:space-between;align-items:center">
+    <div class="logo" style="font-size:22px">Up<b>Grade</b></div>
+    <div class="small" style="letter-spacing:.2em;text-transform:uppercase">Продуктовый гайд · 2026</div>
+  </div>
+
+  <div style="position:absolute;top:58mm;left:17mm;width:100mm">
+    <div class="kicker">Интерактивный фитнес-дневник</div>
+    <h1 class="big">Первые <i>3&nbsp;дня</i><br>на пути<br>к лучшей форме</h1>
+    <p class="lead mt16" style="font-size:13px">Полный гайд по продукту: концепция, путь пользователя, экраны, дизайн-система, геймификация, встроенная продажа марафона, Telegram-интеграция, аналитика и план MVP.</p>
+    <div class="row mt24" style="gap:8px;flex-wrap:wrap">
+      <span class="tag">Mobile First</span><span class="tag sage">Telegram Mini App</span><span class="tag line">Лид-магнит</span>
+    </div>
+  </div>
+
+  <!-- hero phones -->
+  <div style="position:absolute;right:16mm;top:52mm;transform:rotate(4deg)">
+    <div class="phone">
+      <div class="notch"></div>
+      <div class="scr">
+        <div class="sb"><span>9:41</span><span class="icons"><span style="width:12px;height:7px"></span><span style="width:4px;height:7px"></span></span></div>
+        <div class="in" style="padding-top:12px">
+          <div class="s-row" style="justify-content:space-between">
+            <div><div class="s-m">Доброе утро,</div><div class="s-t" style="font-size:14px">Анна ☀️</div></div>
+            <div style="width:30px;height:30px;border-radius:50%;background:var(--blush)"></div>
+          </div>
+          <div class="s-card mt12" style="background:var(--ink);border:none;color:#fff">
+            <div class="s-row" style="justify-content:space-between">
+              <div>
+                <div class="s-k" style="color:var(--rose)">День 1 из 3</div>
+                <div style="font-family:var(--serif);font-size:19px;line-height:1.05;margin-top:4px">Сегодня ты<br>начинаешь <i style="color:var(--rose)">привычку</i></div>
+              </div>
+              <div data-ring="50" data-size="54" data-c="#E7AFA0" data-bg="#4A3A40" data-txt="50%" data-tc="#fff"></div>
+            </div>
+          </div>
+          <div class="s-card">
+            <div class="s-t" style="margin-bottom:4px">Задания на сегодня</div>
+            <div class="task done"><span class="chk on"></span>Тренировка 12 мин</div>
+            <div class="task done"><span class="chk on"></span>Выпить 6 стаканов воды</div>
+            <div class="task"><span class="chk"></span>6 000 шагов</div>
+            <div class="task"><span class="chk"></span>Вечерний отчёт</div>
+          </div>
+          <div class="s-card">
+            <div class="s-row" style="justify-content:space-between"><span class="s-t">Вода</span><span class="s-m">4 / 8</span></div>
+            <div class="drops mt8"><i class="drop on"></i><i class="drop on"></i><i class="drop on"></i><i class="drop on"></i><i class="drop"></i><i class="drop"></i><i class="drop"></i><i class="drop"></i></div>
+          </div>
+          <span class="s-btn coral">▶&nbsp; Начать тренировку</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="position:absolute;right:68mm;top:170mm;transform:rotate(-6deg)">
+    <div class="card" style="width:150px;padding:12px;box-shadow:0 20px 40px -16px rgba(70,35,45,.35);border-radius:18px">
+      <div class="s-row"><div style="font-size:24px">🏅</div><div><div class="s-t">Первый шаг</div><div class="s-m">Первая тренировка выполнена</div></div></div>
+    </div>
+  </div>
+
+  <div style="position:absolute;left:17mm;right:17mm;bottom:18mm;display:flex;justify-content:space-between;align-items:flex-end">
+    <div class="row" style="gap:28px">
+      <div><div class="num">3</div><div class="small">дня программы</div></div>
+      <div><div class="num">10–15</div><div class="small">минут тренировки</div></div>
+      <div><div class="num">21</div><div class="small">день — марафон</div></div>
+    </div>
+    <div class="small" style="text-align:right">Premium Wellness<br>Modern Fitness · Minimalism</div>
+  </div>
+</section>
+
+<!-- ======================= 2. TOC ======================= -->
+<section class="page">
+  <div class="rh"><span class="logo">Up<b>Grade</b></span><span>Содержание</span></div>
+  <div class="kicker mt24">Содержание</div>
+  <h2>Что внутри <i>гайда</i></h2>
+  <p class="lead">Документ описывает продукт целиком — от первого касания в Reels до оплаты марафона. Его можно использовать как бриф для дизайнера, разработчика и маркетолога.</p>
+
+  <div class="mt24">
+    <div class="toc-row"><span class="n">01</span><span class="t">Концепция и воронка</span><span class="d">цель, сценарий, принципы</span></div>
+    <div class="toc-row"><span class="n">02</span><span class="t">Архитектура продукта</span><span class="d">карта экранов</span></div>
+    <div class="toc-row"><span class="n">03</span><span class="t">Онбординг</span><span class="d">5 экранов опроса</span></div>
+    <div class="toc-row"><span class="n">04</span><span class="t">Главный экран дневника</span><span class="d">10 обязательных блоков</span></div>
+    <div class="toc-row"><span class="n">05</span><span class="t">Трёхдневная программа</span><span class="d">старт · привычка · закрепление</span></div>
+    <div class="toc-row"><span class="n">06</span><span class="t">Тренировка и вечерний чек-ин</span><span class="d">ключевые сценарии</span></div>
+    <div class="toc-row"><span class="n">07</span><span class="t">Геймификация</span><span class="d">прогресс, серия, достижения</span></div>
+    <div class="toc-row"><span class="n">08</span><span class="t">Встроенная продажа марафона</span><span class="d">3 точки предложения</span></div>
+    <div class="toc-row"><span class="n">09</span><span class="t">Дизайн-система</span><span class="d">цвет, шрифт, компоненты, анимации</span></div>
+    <div class="toc-row"><span class="n">10</span><span class="t">UX удержания и конверсии</span><span class="d">механики завершения</span></div>
+    <div class="toc-row"><span class="n">11</span><span class="t">Telegram-интеграция</span><span class="d">авторизация, события, напоминания</span></div>
+    <div class="toc-row"><span class="n">12</span><span class="t">Аналитика</span><span class="d">воронка, метрики, UTM</span></div>
+    <div class="toc-row"><span class="n">13</span><span class="t">Административная панель</span><span class="d">контент, цены, статистика</span></div>
+    <div class="toc-row"><span class="n">14</span><span class="t">Техническая архитектура и MVP</span><span class="d">стек, данные, этапы</span></div>
+  </div>
+
+  <div class="card blushc mt24 row" style="align-items:center;gap:16px">
+    <div style="font-size:28px">✦</div>
+    <div><h3 style="margin:0">Главные приоритеты</h3>
+      <p>Красивый интерфейс → Простота → Вовлечённость → Удержание → Конверсия в покупку.</p></div>
+  </div>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>02</span></div>
+</section>
+
+<!-- ======================= 3. CONCEPT ======================= -->
+<section class="page">
+  <div class="rh"><span class="logo">Up<b>Grade</b></span><span>01 · Концепция</span></div>
+  <div class="kicker mt24">01 · Концепция</div>
+  <h2>Бесплатный продукт,<br>а не <i>рекламная страница</i></h2>
+  <p class="lead">Дневник — самостоятельный качественный продукт на 3 дня. Он даёт человеку из Instagram Reels первый реальный результат — ощущение «я смогла» — и естественно подводит к 21-дневному марафону UpGrade.</p>
+
+  <h4 class="mt24">Пользовательский путь</h4>
+  <div class="flow card" style="padding:18px 10px">
+    <div class="st"><div class="ic">🎬</div><div class="t">Instagram Reels</div><div class="d">видео Насти, призыв «забери дневник»</div></div>
+    <div class="arr">→</div>
+    <div class="st"><div class="ic">✈️</div><div class="t">Telegram-бот</div><div class="d">приветствие, фиксация источника</div></div>
+    <div class="arr">→</div>
+    <div class="st"><div class="ic">🔗</div><div class="t">Личная ссылка</div><div class="d">Mini App без регистрации</div></div>
+    <div class="arr">→</div>
+    <div class="st hi"><div class="ic">📔</div><div class="t">Дневник 3 дня</div><div class="d">тренировки, трекеры, прогресс</div></div>
+    <div class="arr">→</div>
+    <div class="st"><div class="ic">💎</div><div class="t">Марафон 21 день</div><div class="d">2 490 ₽, оплата</div></div>
+  </div>
+
+  <div class="grid3 mt16">
+    <div class="card"><div class="num">01</div><h3 class="mt8">Без барьеров</h3><p>Нет email, паролей и установки приложения. Открывается в Telegram за один тап, вход — через проверенные данные Telegram.</p></div>
+    <div class="card"><div class="num">02</div><h3 class="mt8">Быстрая победа</h3><p>Первое достижение — в первые 15 минут: короткая тренировка, галочки, анимация и бейдж «Первый шаг».</p></div>
+    <div class="card"><div class="num">03</div><h3 class="mt8">Мягкая продажа</h3><p>Предложение марафона встроено в сценарий как логичное продолжение, а не всплывающее окно.</p></div>
+  </div>
+
+  <div class="row mt16">
+    <div class="card ink col">
+      <h4 style="color:var(--rose)">Целевая аудитория</h4>
+      <p>Женщины 20–45 лет, смотрят фитнес-контент в Reels, хотят изменений, но не готовы сразу платить. Часто начинали и бросали — им нужна простота и поддержка, а не давление.</p>
+    </div>
+    <div class="card col">
+      <h4>Что считаем успехом</h4>
+      <ul class="clean">
+        <li>Пользователь завершил онбординг и первый день</li>
+        <li>Вернулся на второй и третий день</li>
+        <li>Увидел финальную статистику</li>
+        <li>Перешёл к оплате и купил марафон</li>
+      </ul>
+    </div>
+  </div>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>03</span></div>
+</section>
+
+<!-- ======================= 4. ARCHITECTURE ======================= -->
+<section class="page">
+  <div class="rh"><span class="logo">Up<b>Grade</b></span><span>02 · Архитектура</span></div>
+  <div class="kicker mt24">02 · Архитектура продукта</div>
+  <h2>Карта <i>экранов</i></h2>
+  <p class="lead">Плоская структура: всё важное — в один-два тапа от главного экрана. Нижняя навигация из трёх вкладок, крупные зоны нажатия в нижней половине экрана для управления одной рукой.</p>
+
+  <svg width="100%" height="560" viewBox="0 0 680 560" style="margin-top:14px" font-family="Manrope" >
+    <defs>
+      <marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#E7AFA0"/></marker>
+    </defs>
+    <g stroke="#E7AFA0" stroke-width="1.4" fill="none" marker-end="url(#ar)">
+      <path d="M340 56 V84"/>
+      <path d="M340 140 V168"/>
+      <path d="M340 224 C340 250 110 240 110 272"/>
+      <path d="M340 224 V272"/>
+      <path d="M340 224 C340 250 570 240 570 272"/>
+      <path d="M110 328 V362"/>
+      <path d="M110 418 V448"/>
+      <path d="M340 328 V362"/>
+      <path d="M570 328 V362"/>
+      <path d="M340 418 C340 470 420 480 470 492" stroke-dasharray="4 3"/>
+      <path d="M110 504 C200 530 380 530 470 512" stroke-dasharray="4 3"/>
+    </g>
+    <!-- nodes -->
+    <g font-size="12" font-weight="700" text-anchor="middle">
+      <rect x="250" y="8" width="180" height="48" rx="16" fill="#2A2024"/>
+      <text x="340" y="30" fill="#fff">Вход из Telegram</text>
+      <text x="340" y="46" fill="#C9B8B2" font-size="9.5" font-weight="500">initData · UTM · start-параметр</text>
+
+      <rect x="230" y="84" width="220" height="56" rx="16" fill="#FFFDFB" stroke="#E7DCD1"/>
+      <text x="340" y="108" fill="#2A2024">Онбординг · 5 экранов</text>
+      <text x="340" y="126" fill="#8C7E82" font-size="9.5" font-weight="500">приветствие · цель · уровень · формат · замеры</text>
+
+      <rect x="230" y="168" width="220" height="56" rx="16" fill="#D8735A"/>
+      <text x="340" y="192" fill="#fff">Главный экран «Сегодня»</text>
+      <text x="340" y="210" fill="#FBE6DF" font-size="9.5" font-weight="500">задания · трекеры · прогресс · CTA</text>
+
+      <rect x="20" y="272" width="180" height="56" rx="16" fill="#FFFDFB" stroke="#E7DCD1"/>
+      <text x="110" y="296" fill="#2A2024">Тренировка</text>
+      <text x="110" y="314" fill="#8C7E82" font-size="9.5" font-weight="500">видео · таймер · упражнения</text>
+
+      <rect x="250" y="272" width="180" height="56" rx="16" fill="#FFFDFB" stroke="#E7DCD1"/>
+      <text x="340" y="296" fill="#2A2024">Трекеры</text>
+      <text x="340" y="314" fill="#8C7E82" font-size="9.5" font-weight="500">вода · шаги · настроение</text>
+
+      <rect x="480" y="272" width="180" height="56" rx="16" fill="#FFFDFB" stroke="#E7DCD1"/>
+      <text x="570" y="296" fill="#2A2024">Прогресс</text>
+      <text x="570" y="314" fill="#8C7E82" font-size="9.5" font-weight="500">серия · достижения · дни</text>
+
+      <rect x="20" y="362" width="180" height="56" rx="16" fill="#E5ECE1" stroke="#D3DECE"/>
+      <text x="110" y="386" fill="#2A2024">Экран «Готово!»</text>
+      <text x="110" y="404" fill="#6F8A6C" font-size="9.5" font-weight="500">микроанимация · бейдж</text>
+
+      <rect x="250" y="362" width="180" height="56" rx="16" fill="#FFFDFB" stroke="#E7DCD1"/>
+      <text x="340" y="386" fill="#2A2024">Вечерний чек-ин</text>
+      <text x="340" y="404" fill="#8C7E82" font-size="9.5" font-weight="500">самочувствие · заметка</text>
+
+      <rect x="480" y="362" width="180" height="56" rx="16" fill="#FFFDFB" stroke="#E7DCD1"/>
+      <text x="570" y="386" fill="#2A2024">Финальный экран</text>
+      <text x="570" y="404" fill="#8C7E82" font-size="9.5" font-weight="500">статистика 3 дней</text>
+
+      <rect x="20" y="448" width="180" height="56" rx="16" fill="#F3D9D0" stroke="#EBC8BC"/>
+      <text x="110" y="472" fill="#5A3848">Оффер №1</text>
+      <text x="110" y="490" fill="#5A3848" font-size="9.5" font-weight="500">после 1-й тренировки</text>
+
+      <rect x="470" y="470" width="190" height="64" rx="16" fill="#2A2024"/>
+      <text x="565" y="496" fill="#fff">Страница марафона</text>
+      <text x="565" y="514" fill="#E7AFA0" font-size="9.5" font-weight="500">2 490 ₽ → оплата</text>
+    </g>
+    <g font-size="9" fill="#8C7E82" font-weight="600">
+      <text x="372" y="470">оффер №2 после дня 2</text>
+      <text x="250" y="540">оффер №3 на финале</text>
+    </g>
+  </svg>
+
+  <div class="grid3 mt8">
+    <div class="card soft"><h3>Вкладка «Сегодня»</h3><p>Единственная точка входа каждый день. Показывает только то, что нужно сделать сейчас.</p></div>
+    <div class="card soft"><h3>Вкладка «Программа»</h3><p>Три дня в виде таймлайна: пройденные, текущий и закрытый «завтра» — интрига для возврата.</p></div>
+    <div class="card soft"><h3>Вкладка «Прогресс»</h3><p>Серия, достижения, статистика. Здесь же — постоянная ненавязчивая ссылка на марафон.</p></div>
+  </div>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>04</span></div>
+</section>
+
+<!-- ======================= 5. ONBOARDING ======================= -->
+<section class="page blush">
+  <div class="rh"><span class="logo">Up<b>Grade</b></span><span>03 · Онбординг</span></div>
+  <div class="kicker mt24">03 · Онбординг</div>
+  <h2>Пять экранов —<br><i>меньше минуты</i></h2>
+  <p class="lead">Один вопрос на экран, ответ — одним тапом, автоматический переход дальше. Прогресс-бар сверху показывает, что осталось совсем немного. Замеры необязательны.</p>
+
+  <div class="row mt24" style="gap:10px;justify-content:space-between">
+    <!-- s1 -->
+    <div class="phone sm"><div class="notch"></div><div class="scr" style="background:linear-gradient(180deg,#F3D3C8,#F7F2EC 60%)">
+      <div class="sb"><span>9:41</span><span></span></div>
+      <div class="in" style="padding-top:110px">
+        <div class="s-k">UpGrade</div>
+        <div class="s-h mt4">Твои первые <i>3 дня</i> на пути к лучшей форме</div>
+        <div class="s-p mt8">Тренировки по 10–15 минут, простые задания и поддержка Насти.</div>
+      </div>
+      <div style="position:absolute;bottom:16px;left:11px;right:11px"><span class="s-btn">Начать</span></div>
+    </div></div>
+    <!-- s2 -->
+    <div class="phone sm"><div class="notch"></div><div class="scr">
+      <div class="sb"><span>9:41</span><span></span></div>
+      <div class="in"><div class="s-bar mt4"><span style="width:25%"></span></div>
+        <div class="s-m mt8">Шаг 1 из 4</div>
+        <div class="s-h mt4" style="font-size:17px">Что ты хочешь изменить?</div>
+        <div class="mt8">
+          <div class="s-opt"><span class="em">⚖️</span>Похудеть<span class="rd"></span></div>
+          <div class="s-opt on"><span class="em">🔥</span>Подтянуть живот<span class="rd"></span></div>
+          <div class="s-opt"><span class="em">🍑</span>Упругие ягодицы<span class="rd"></span></div>
+          <div class="s-opt"><span class="em">🔁</span>Вернуться к тренировкам<span class="rd"></span></div>
+          <div class="s-opt"><span class="em">🌿</span>Улучшить самочувствие<span class="rd"></span></div>
+        </div>
+      </div>
+    </div></div>
+    <!-- s3 -->
+    <div class="phone sm"><div class="notch"></div><div class="scr">
+      <div class="sb"><span>9:41</span><span></span></div>
+      <div class="in"><div class="s-bar mt4"><span style="width:50%"></span></div>
+        <div class="s-m mt8">Шаг 2 из 4</div>
+        <div class="s-h mt4" style="font-size:17px">Твой текущий уровень</div>
+        <div class="mt8">
+          <div class="s-opt"><span class="em">🌱</span>Не занимаюсь<span class="rd"></span></div>
+          <div class="s-opt on"><span class="em">🌤</span>Иногда тренируюсь<span class="rd"></span></div>
+          <div class="s-opt"><span class="em">⚡️</span>Регулярно занимаюсь<span class="rd"></span></div>
+        </div>
+        <div class="s-p mt8">Подберём интенсивность тренировок под тебя.</div>
+      </div>
+    </div></div>
+  </div>
+
+  <div class="row mt16" style="gap:10px;align-items:flex-start">
+    <!-- s4 -->
+    <div class="phone sm"><div class="notch"></div><div class="scr">
+      <div class="sb"><span>9:41</span><span></span></div>
+      <div class="in"><div class="s-bar mt4"><span style="width:75%"></span></div>
+        <div class="s-m mt8">Шаг 3 из 4</div>
+        <div class="s-h mt4" style="font-size:17px">Где будешь тренироваться?</div>
+        <div class="row mt8" style="gap:6px">
+          <div class="s-card col" style="text-align:center;border-color:var(--coral);background:#FCEDE8"><div style="font-size:20px">🏠</div><div class="s-t mt4">Дома</div></div>
+          <div class="s-card col" style="text-align:center"><div style="font-size:20px">🏋️</div><div class="s-t mt4">В зале</div></div>
+        </div>
+      </div>
+    </div></div>
+    <!-- s5 -->
+    <div class="phone sm"><div class="notch"></div><div class="scr">
+      <div class="sb"><span>9:41</span><span></span></div>
+      <div class="in"><div class="s-bar mt4"><span style="width:100%"></span></div>
+        <div class="s-m mt8">Шаг 4 из 4 · необязательно</div>
+        <div class="s-h mt4" style="font-size:17px">Стартовые показатели</div>
+        <div class="field-l">Вес, кг</div><div class="field" style="font-size:8px">62</div>
+        <div class="field-l">Обхват талии, см</div><div class="field" style="font-size:8px;color:var(--muted)">—</div>
+        <div class="field-l">Обхват бёдер, см</div><div class="field" style="font-size:8px;color:var(--muted)">—</div>
+      </div>
+      <div style="position:absolute;bottom:16px;left:11px;right:11px"><span class="s-btn coral">Создать мой дневник</span><div class="s-m center mt4">Пропустить</div></div>
+    </div></div>
+
+    <div class="col" style="padding-left:6px">
+      <div class="card">
+        <h4>Правила онбординга</h4>
+        <ul class="clean">
+          <li>Выбор варианта = автопереход через 300 мс</li>
+          <li>Кнопка «Назад» и возможность изменить ответ позже</li>
+          <li>Замеры можно пропустить — данные хранятся только у пользователя и не публикуются</li>
+          <li>Каждый ответ сохраняется на сервере сразу — закрыла и вернулась без потерь</li>
+          <li>Событие <code>onboarding_completed</code> уходит в бот</li>
+        </ul>
+      </div>
+      <div class="card ink mt12">
+        <h4 style="color:var(--rose)">Персонализация</h4>
+        <p>Цель → тексты мотивации и акцент тренировок. Уровень → версия тренировки (лёгкая / базовая / продвинутая). Формат → домашний или зальный набор упражнений.</p>
+      </div>
+    </div>
+  </div>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>05</span></div>
+</section>
+
+<!-- ======================= 6. HOME ======================= -->
+<section class="page">
+  <div class="rh"><span class="logo">Up<b>Grade</b></span><span>04 · Главный экран</span></div>
+  <div class="kicker mt24">04 · Главный экран</div>
+  <h2>«Сегодня» — всё <i>в одном месте</i></h2>
+  <p class="lead">Десять блоков из ТЗ упакованы в одну прокручиваемую ленту. Сверху — эмоция и прогресс, в середине — действия, внизу — закреплённая кнопка тренировки в зоне большого пальца.</p>
+
+  <div style="position:relative;height:700px;margin-top:20px">
+    <div style="position:absolute;left:50%;top:0;transform:translateX(-50%)">
+      <div class="phone" style="height:690px">
+        <div class="notch"></div>
+        <div class="scr">
+          <div class="sb"><span>9:41</span><span></span></div>
+          <div class="in" style="padding-top:10px">
+            <div class="s-row" style="justify-content:space-between">
+              <div><div class="s-m">Привет,</div><div class="s-t" style="font-size:14px">Анна 👋</div></div>
+              <span class="tag" style="font-size:7px">🔥 Подтянуть живот</span>
+            </div>
+            <div class="s-card mt8" style="background:var(--ink);border:none;color:#fff">
+              <div class="s-row" style="justify-content:space-between">
+                <div><div class="s-k" style="color:var(--rose)">День 1 из 3</div>
+                  <div style="font-family:var(--serif);font-size:17px;line-height:1.05;margin-top:3px">Сегодня ты начинаешь<br>формировать <i style="color:var(--rose)">привычку</i></div></div>
+                <div data-ring="25" data-size="48" data-c="#E7AFA0" data-bg="#4A3A40" data-txt="25%" data-tc="#fff"></div>
+              </div>
+            </div>
+            <div class="s-card">
+              <div class="s-t" style="margin-bottom:2px">Задания на сегодня</div>
+              <div class="task done"><span class="chk on"></span>Выполнить тренировку</div>
+              <div class="task"><span class="chk"></span>Выпить свою норму воды</div>
+              <div class="task"><span class="chk"></span>Цель по активности</div>
+              <div class="task"><span class="chk"></span>Вечерний отчёт</div>
+            </div>
+            <div class="row" style="gap:6px">
+              <div class="s-card col"><div class="s-m">Вода</div><div class="s-t">3 / 8 💧</div><div class="s-bar mt4"><span style="width:37%;background:#8FB3C9"></span></div></div>
+              <div class="s-card col"><div class="s-m">Шаги</div><div class="s-t">2 140 👟</div><div class="s-bar mt4"><span style="width:35%;background:var(--sage-d)"></span></div></div>
+            </div>
+            <div class="s-card">
+              <div class="s-m" style="margin-bottom:4px">Как ты себя чувствуешь?</div>
+              <div class="moods"><span class="mood">😞</span><span class="mood">😐</span><span class="mood on">🙂</span><span class="mood">😊</span><span class="mood">🤩</span></div>
+            </div>
+            <div class="s-card" style="background:#E5ECE1;border-color:#D3DECE"><div class="s-p" style="color:#4C6449">💡 Пей стакан воды сразу после пробуждения — это запускает день.</div></div>
+          </div>
+          <div style="position:absolute;bottom:58px;left:16px;right:16px"><span class="s-btn coral" style="box-shadow:0 10px 20px -8px rgba(216,115,90,.6)">▶&nbsp; Тренировка · 12 мин</span></div>
+          <div class="tabbar"><div class="on"><i></i>Сегодня</div><div><i></i>Программа</div><div><i></i>Прогресс</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- annotations left -->
+    <div class="ann" style="left:0;top:56px;width:185px;justify-content:flex-end;text-align:right">Приветствие по имени из Telegram<span class="n">1</span></div>
+    <div class="ann" style="left:0;top:100px;width:185px;justify-content:flex-end;text-align:right">Текущий день программы<span class="n">3</span></div>
+    <div class="ann" style="left:0;top:210px;width:185px;justify-content:flex-end;text-align:right">Задания на сегодня — чек-лист<span class="n">5</span></div>
+    <div class="ann" style="left:0;top:372px;width:185px;justify-content:flex-end;text-align:right">Трекер воды — тап по капле<span class="n">6</span></div>
+    <div class="ann" style="left:0;top:452px;width:185px;justify-content:flex-end;text-align:right">Трекер настроения<span class="n">8</span></div>
+    <div class="ann" style="left:0;top:598px;width:185px;justify-content:flex-end;text-align:right">Кнопка тренировки — в зоне большого пальца<span class="n">9</span></div>
+    <!-- right -->
+    <div class="ann" style="right:0;top:56px;width:185px"><span class="n">2</span>Основная цель пользователя</div>
+    <div class="ann" style="right:0;top:110px;width:185px"><span class="n">4</span>Прогресс дня в процентах — кольцо</div>
+    <div class="ann" style="right:0;top:372px;width:185px"><span class="n">7</span>Трекер активности — шаги, ручной ввод или «отметить цель»</div>
+    <div class="ann" style="right:0;top:492px;width:185px"><span class="n">10</span>Короткая мотивирующая рекомендация дня</div>
+  </div>
+
+  <div class="card blushc mt8 row" style="gap:14px;align-items:center">
+    <div style="font-size:24px">✓</div>
+    <p style="margin:0"><b>Прогресс обновляется автоматически:</b> каждое задание = 25% дня. При отметке — вибрация (Telegram HapticFeedback), анимация галочки и плавное заполнение кольца.</p>
+  </div>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>06</span></div>
+</section>
+
+<!-- ======================= 7. PROGRAM ======================= -->
+<section class="page">
+  <div class="rh"><span class="logo">Up<b>Grade</b></span><span>05 · Программа</span></div>
+  <div class="kicker mt24">05 · Трёхдневная программа</div>
+  <h2>Три дня — <i>три задачи</i></h2>
+  <p class="lead">Каждый день решает свою продуктовую задачу: дать первую победу, закрепить привычку, показать результат и предложить продолжение.</p>
+
+  <div class="grid3 mt24" style="align-items:stretch">
+    <div class="card" style="padding:0;overflow:hidden">
+      <div style="background:linear-gradient(140deg,#F3D3C8,#E7AFA0);padding:16px 15px 14px">
+        <div class="s-k" style="color:var(--plum)">День 1</div>
+        <div style="font-family:var(--serif);font-size:34px;line-height:1">Старт</div>
+        <div class="small mt4" style="color:var(--plum)">Знакомство и первое достижение</div>
+      </div>
+      <div style="padding:14px 15px">
+        <ul class="clean">
+          <li>Видеообращение Насти (до 60 сек)</li>
+          <li>Тренировка 10–15 минут</li>
+          <li>Рекомендация по питанию</li>
+          <li>Трекер воды</li>
+          <li>Вечерний чек-ин</li>
+        </ul>
+        <div class="divider"></div>
+        <h4>Ключевой момент</h4>
+        <p>Бейдж «Первый шаг» и оффер №1 сразу после тренировки — на пике эмоций.</p>
+        <div class="mt8"><code>day_1_started</code> <code>workout_completed</code> <code>day_1_completed</code></div>
+      </div>
+    </div>
+    <div class="card" style="padding:0;overflow:hidden">
+      <div style="background:linear-gradient(140deg,#E5ECE1,#AFC1AB);padding:16px 15px 14px">
+        <div class="s-k" style="color:#3F5A3C">День 2</div>
+        <div style="font-family:var(--serif);font-size:34px;line-height:1">Привычка</div>
+        <div class="small mt4" style="color:#3F5A3C">Рост вовлечённости</div>
+      </div>
+      <div style="padding:14px 15px">
+        <ul class="clean">
+          <li>Вторая тренировка</li>
+          <li>Небольшое задание по питанию</li>
+          <li>Трекер активности</li>
+          <li>Оценка самочувствия</li>
+          <li>Персональная мотивация по цели</li>
+        </ul>
+        <div class="divider"></div>
+        <h4>Ключевой момент</h4>
+        <p>Сравнение «вчера / сегодня» по самочувствию. Бейдж «В ритме». Оффер №2 с преимуществами марафона.</p>
+        <div class="mt8"><code>day_2_completed</code></div>
+      </div>
+    </div>
+    <div class="card" style="padding:0;overflow:hidden">
+      <div style="background:linear-gradient(140deg,#5A3848,#2A2024);padding:16px 15px 14px;color:#fff">
+        <div class="s-k" style="color:var(--rose)">День 3</div>
+        <div style="font-family:var(--serif);font-size:34px;line-height:1">Результат</div>
+        <div class="small mt4" style="color:#E3D3CD">Закрепление и продолжение</div>
+      </div>
+      <div style="padding:14px 15px">
+        <ul class="clean">
+          <li>Финальная тренировка</li>
+          <li>Контроль выполнения заданий</li>
+          <li>Итоговая статистика</li>
+          <li>Поздравление с завершением</li>
+          <li>Переход в 21-дневный марафон</li>
+        </ul>
+        <div class="divider"></div>
+        <h4>Ключевой момент</h4>
+        <p>Бейдж «Три дня для себя», финальный экран с честной статистикой и оффер №3.</p>
+        <div class="mt8"><code>day_3_completed</code></div>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="mt24">Как открываются дни</h4>
+  <div class="card">
+    <svg width="100%" height="110" viewBox="0 0 640 110" font-family="Manrope">
+      <line x1="40" y1="40" x2="600" y2="40" stroke="#E7DCD1" stroke-width="3"/>
+      <line x1="40" y1="40" x2="320" y2="40" stroke="#D8735A" stroke-width="3"/>
+      <circle cx="40" cy="40" r="14" fill="#D8735A"/><text x="40" y="44.5" text-anchor="middle" font-size="12" fill="#fff" font-weight="800">✓</text>
+      <circle cx="320" cy="40" r="14" fill="#fff" stroke="#D8735A" stroke-width="3"/><text x="320" y="45" text-anchor="middle" font-size="12" fill="#D8735A" font-weight="800">2</text>
+      <circle cx="600" cy="40" r="14" fill="#F7F2EC" stroke="#E7DCD1" stroke-width="2"/><text x="600" y="45" text-anchor="middle" font-size="11">🔒</text>
+      <g font-size="11" font-weight="700" fill="#2A2024" text-anchor="middle"><text x="40" y="76">День 1</text><text x="320" y="76">День 2 · сегодня</text><text x="600" y="76">День 3</text></g>
+      <g font-size="9" fill="#8C7E82" text-anchor="middle"><text x="40" y="92">пройден</text><text x="320" y="92">открыт в 00:00 по времени пользователя</text><text x="600" y="92">откроется завтра</text></g>
+    </svg>
+    <p class="small">Новый день открывается по календарю (в часовом поясе пользователя), а не сразу — так формируется привычка возвращаться. Пропустила день — программа не «сгорает»: текущий день остаётся доступным, серия просто не растёт.</p>
+  </div>
+
+  <h4 class="mt24">Персональная мотивация дня 2 — по цели</h4>
+  <div class="grid3">
+    <div class="card blushc"><span class="tag">Похудеть</span><p class="mt8" style="font-family:var(--serif);font-size:15px;line-height:1.25;color:var(--ink)">«Вчера ты начала. Сегодня — главное не скорость, а регулярность».</p></div>
+    <div class="card sage"><span class="tag sage">Подтянуть живот</span><p class="mt8" style="font-family:var(--serif);font-size:15px;line-height:1.25;color:var(--ink)">«Мышцы кора любят повторение. Второй день — это и есть повторение».</p></div>
+    <div class="card"><span class="tag line">Вернуться к спорту</span><p class="mt8" style="font-family:var(--serif);font-size:15px;line-height:1.25;color:var(--ink)">«Ты уже вернулась — вчера. Сегодня просто продолжаем».</p></div>
+  </div>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>07</span></div>
+</section>
+
+<!-- ======================= 8. WORKOUT + CHECKIN ======================= -->
+<section class="page blush">
+  <div class="rh"><span class="logo">Up<b>Grade</b></span><span>06 · Сценарии</span></div>
+  <div class="kicker mt24">06 · Ключевые сценарии</div>
+  <h2>Тренировка, «готово!»<br>и <i>вечерний чек-ин</i></h2>
+
+  <div class="row mt24" style="gap:12px;justify-content:space-between;zoom:1.24">
+    <!-- workout -->
+    <div class="phone sm" style="height:380px"><div class="notch"></div><div class="scr">
+      <div class="sb"><span>9:41</span><span></span></div>
+      <div class="in">
+        <div class="video" style="height:110px;border-radius:12px"><span class="dur">12:00</span><span class="play" style="transform:translate(-50%,-50%) scale(.8)"></span><span class="lbl">Тренировка дня 1</span></div>
+        <div class="s-h mt8" style="font-size:16px">Пресс и кор · дома</div>
+        <div class="s-m">Базовый уровень · без инвентаря</div>
+        <div class="mt8">
+          <div class="s-card s-row"><span class="chk on"></span><div class="col"><div class="s-t">Разминка</div><div class="s-m">2 мин</div></div></div>
+          <div class="s-card s-row" style="border-color:var(--coral)"><span class="chk"></span><div class="col"><div class="s-t">Скручивания</div><div class="s-m">3 × 15</div></div><span class="tag" style="font-size:5.5px">сейчас</span></div>
+          <div class="s-card s-row"><span class="chk"></span><div class="col"><div class="s-t">Планка</div><div class="s-m">3 × 30 сек</div></div></div>
+          <div class="s-card s-row"><span class="chk"></span><div class="col"><div class="s-t">Заминка</div><div class="s-m">2 мин</div></div></div>
+        </div>
+      </div>
+      <div style="position:absolute;bottom:12px;left:11px;right:11px"><span class="s-btn">Завершить тренировку</span></div>
+    </div></div>
+
+    <!-- done -->
+    <div class="phone sm" style="height:380px"><div class="notch"></div><div class="scr" style="background:radial-gradient(circle at 50% 35%,#F3D3C8 0,#F7F2EC 60%)">
+      <div class="sb"><span>9:41</span><span></span></div>
+      <svg width="156" height="120" style="position:absolute;top:30px;left:0" viewBox="0 0 156 120">
+        <g fill="#D8735A"><rect x="20" y="20" width="5" height="9" rx="1" transform="rotate(20 20 20)"/><rect x="130" y="30" width="5" height="9" rx="1" transform="rotate(-30 130 30)"/><circle cx="40" cy="70" r="3"/><circle cx="120" cy="80" r="2.5"/></g>
+        <g fill="#AFC1AB"><rect x="100" y="12" width="5" height="9" rx="1" transform="rotate(45 100 12)"/><circle cx="30" cy="45" r="2.5"/><rect x="60" y="8" width="4" height="8" rx="1"/></g>
+        <g fill="#C9A27A"><circle cx="140" cy="60" r="3"/><rect x="15" y="90" width="4" height="8" rx="1" transform="rotate(-20 15 90)"/></g>
+      </svg>
+      <div class="center" style="padding-top:70px">
+        <div style="width:80px;height:80px;border-radius:50%;background:var(--paper);margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:38px;box-shadow:0 14px 30px -12px rgba(216,115,90,.6);border:3px solid var(--coral)">🏅</div>
+        <div class="s-k mt12">Достижение открыто</div>
+        <div class="s-h mt4" style="font-size:22px">Первый <i>шаг</i></div>
+        <div class="s-p mt4" style="padding:0 16px">Ты выполнила первую тренировку. Это уже больше, чем вчера.</div>
+      </div>
+      <div style="position:absolute;bottom:58px;left:11px;right:11px" class="s-card">
+        <div class="s-t">Хочешь продолжить?</div>
+        <div class="s-p mt4">В полном марафоне — 21 день тренировок, питания и поддержки.</div>
+        <div class="s-m mt4" style="color:var(--coral);font-weight:700">Узнать о программе →</div>
+      </div>
+      <div style="position:absolute;bottom:12px;left:11px;right:11px"><span class="s-btn">К заданиям дня</span></div>
+    </div></div>
+
+    <!-- checkin -->
+    <div class="phone sm" style="height:380px"><div class="notch"></div><div class="scr">
+      <div class="sb"><span>21:00</span><span></span></div>
+      <div class="in">
+        <div class="s-k">Вечерний отчёт · День 1</div>
+        <div class="s-h mt4" style="font-size:18px">Как прошёл <i>твой день?</i></div>
+        <div class="s-card mt8"><div class="s-m" style="margin-bottom:5px">Настроение</div><div class="moods"><span class="mood">😞</span><span class="mood">😐</span><span class="mood">🙂</span><span class="mood on">😊</span><span class="mood">🤩</span></div></div>
+        <div class="s-card"><div class="s-m">Уровень энергии</div>
+          <div class="s-bar mt8" style="height:6px"><span style="width:70%"></span></div>
+          <div class="s-row mt4" style="justify-content:space-between"><span class="s-m">мало</span><span class="s-m">много</span></div></div>
+        <div class="s-card"><div class="s-m">Что получилось лучше всего?</div><div class="s-p mt4" style="color:var(--ink)">Сделала тренировку утром до работы ✨</div></div>
+        <div class="s-card s-row" style="background:#E5ECE1;border-color:#D3DECE"><span style="font-size:12px">🔔</span><div class="s-p" style="color:#4C6449">Напомнить о Дне 2 завтра в 9:00?</div></div>
+      </div>
+      <div style="position:absolute;bottom:12px;left:11px;right:11px"><span class="s-btn coral">Завершить день</span></div>
+    </div></div>
+  </div>
+
+  <div class="grid3 mt24">
+    <div><h3>Тренировка</h3><p>Видео + пошаговый список упражнений. Можно отмечать упражнения по ходу или нажать «Завершить» сразу. Видео — с CDN/Kinescope/YouTube, лёгкий постер грузится первым.</p></div>
+    <div><h3>Экран успеха</h3><p>Конфетти, бейдж, тёплый текст. Ниже — мягкий оффер №1 в виде карточки, без перекрытия экрана. Основная кнопка ведёт обратно к заданиям.</p></div>
+    <div><h3>Чек-ин</h3><p>3 вопроса, 30 секунд. Ответы используются для персональной мотивации на следующий день и согласия на напоминание в боте.</p></div>
+  </div>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>08</span></div>
+</section>
+
+<!-- ======================= 9. GAMIFICATION ======================= -->
+<section class="page">
+  <div class="rh"><span class="logo">Up<b>Grade</b></span><span>07 · Геймификация</span></div>
+  <div class="kicker mt24">07 · Геймификация</div>
+  <h2>Мотивация <i>возвращаться</i></h2>
+  <p class="lead">Только честные показатели действий пользователя. Никаких выдуманных «минус 2 кг» — дневник измеряет то, что человек сделал, а не обещает изменения тела.</p>
+
+  <div class="grid3 mt24">
+    <div class="card center">
+      <div class="badge"><div data-ring="100" data-size="74" data-c="#D8735A" data-bg="#F3D9D0" data-txt=""></div><span class="e">👟</span></div>
+      <h3 class="mt8">Первый шаг</h3><p class="small">Выполнена первая тренировка</p>
+    </div>
+    <div class="card center">
+      <div class="badge"><div data-ring="66" data-size="74" data-c="#6F8A6C" data-bg="#E5ECE1" data-txt=""></div><span class="e">🔥</span></div>
+      <h3 class="mt8">В ритме</h3><p class="small">Два активных дня</p>
+    </div>
+    <div class="card center">
+      <div class="badge locked"><div data-ring="33" data-size="74" data-c="#C9A27A" data-bg="#EFE5DA" data-txt=""></div><span class="e">👑</span></div>
+      <h3 class="mt8">Три дня для себя</h3><p class="small">Программа завершена · закрыто</p>
+    </div>
+  </div>
+
+  <div class="row mt24" style="gap:22px;align-items:flex-start">
+    <div class="phone sm" style="height:400px;zoom:1.15"><div class="notch"></div><div class="scr" style="background:linear-gradient(180deg,#2A2024,#5A3848 55%,#F7F2EC 55.2%)">
+      <div class="sb" style="color:#fff"><span>9:41</span><span></span></div>
+      <div class="in center" style="color:#fff">
+        <div class="s-k" style="color:var(--rose)">Программа завершена</div>
+        <div class="s-h mt4" style="color:#fff;font-size:20px">Ты сделала <i style="color:var(--rose)">это</i>, Анна</div>
+        <div style="margin:10px auto 0;width:84px" data-ring="92" data-size="84" data-c="#E7AFA0" data-bg="#6B4C5A" data-txt="92%" data-tc="#fff"></div>
+        <div class="s-m mt4" style="color:#E3D3CD">прохождение программы</div>
+      </div>
+      <div class="in" style="margin-top:22px">
+        <div class="grid2" style="gap:5px">
+          <div class="s-card" style="margin:0"><div class="s-t" style="font-size:13px">3 / 3</div><div class="s-m">тренировки</div></div>
+          <div class="s-card" style="margin:0"><div class="s-t" style="font-size:13px">11 / 12</div><div class="s-m">заданий</div></div>
+          <div class="s-card" style="margin:0"><div class="s-t" style="font-size:13px">3 🔥</div><div class="s-m">активных дня</div></div>
+          <div class="s-card" style="margin:0"><div class="s-t" style="font-size:13px">3 / 3</div><div class="s-m">достижения</div></div>
+        </div>
+        <span class="s-btn coral mt8">Продолжить с UpGrade</span>
+      </div>
+    </div></div>
+
+    <div class="col">
+      <h4>Механики</h4>
+      <table class="t">
+        <tr><th>Элемент</th><th>Как работает</th></tr>
+        <tr><td><b>Прогресс</b></td><td>% выполненных заданий: за день (кольцо) и за программу (полоса). 4 задания × 3 дня = 12 пунктов.</td></tr>
+        <tr><td><b>Серия</b></td><td>Количество дней, в которые выполнено ≥1 задание. Иконка 🔥 с числом на главном экране.</td></tr>
+        <tr><td><b>Достижения</b></td><td>Открываются по событиям, показываются экраном успеха один раз, затем живут на вкладке «Прогресс».</td></tr>
+        <tr><td><b>Финал</b></td><td>Персональная статистика: тренировки, задания, % прохождения, активные дни.</td></tr>
+        <tr><td><b>Шеринг</b></td><td>Этап 2: карточка-итог для сторис (без данных о весе) — органический охват.</td></tr>
+      </table>
+      <div class="card mt12">
+        <h4>Серия активных дней</h4>
+        <div class="row" style="gap:8px;align-items:center">
+          <div style="flex:1;text-align:center"><div style="width:44px;height:44px;border-radius:14px;background:var(--coral);margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:20px">🔥</div><div class="small mt4">День 1</div></div>
+          <div style="flex:1;text-align:center"><div style="width:44px;height:44px;border-radius:14px;background:var(--coral);margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:20px">🔥</div><div class="small mt4">День 2</div></div>
+          <div style="flex:1;text-align:center"><div style="width:44px;height:44px;border-radius:14px;background:var(--sand);border:2px dashed var(--rose);margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--muted)">?</div><div class="small mt4">День 3</div></div>
+          <div style="flex:2;padding-left:6px"><div style="font-family:var(--serif);font-size:30px;color:var(--coral);line-height:1">2 дня</div><div class="small">подряд — не прерывай серию!</div></div>
+        </div>
+      </div>
+      <div class="card blushc mt12">
+        <h3>Числа на макете — пример</h3>
+        <p>Финальный экран считает реальные действия конкретного пользователя. Если замеры введены — показываем их только как «стартовые», без прогнозов и сравнений.</p>
+      </div>
+    </div>
+  </div>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>09</span></div>
+</section>
+
+<!-- ======================= 10. SALES ======================= -->
+<section class="page">
+  <div class="rh"><span class="logo">Up<b>Grade</b></span><span>08 · Продажа</span></div>
+  <div class="kicker mt24">08 · Встроенная продажа</div>
+  <h2>Три касания —<br><i>ноль всплывающих окон</i></h2>
+  <p class="lead">Каждое предложение появляется в момент максимальной эмоции и выглядит как часть дневника. Его можно пролистать — и это не мешает продолжать бесплатную программу.</p>
+
+  <div class="grid3 mt24" style="align-items:stretch">
+    <div class="card" style="display:flex;flex-direction:column">
+      <span class="tag">Касание 1 · после 1-й тренировки</span>
+      <div class="s-card mt12" style="background:var(--cream)">
+        <div class="s-t" style="font-size:11px">Хочешь продолжить?</div>
+        <div class="s-p mt4">В полном марафоне тебя ждёт 21 день тренировок, питания и поддержки.</div>
+        <span class="s-btn ghost mt8" style="font-size:9.5px;padding:8px 0">Узнать о программе</span>
+      </div>
+      <p class="mt8 small">Карточка под экраном успеха. Цель — посеять интерес, не продавать.</p>
+      <div style="margin-top:auto"><code>marathon_offer_viewed</code></div>
+    </div>
+    <div class="card" style="display:flex;flex-direction:column">
+      <span class="tag sage">Касание 2 · после дня 2</span>
+      <div class="s-card mt12" style="background:var(--cream)">
+        <div class="s-t" style="font-size:11px">Что внутри марафона</div>
+        <div class="task" style="font-size:9px">🏋️ 21 тренировка по уровню</div>
+        <div class="task" style="font-size:9px">🥗 Меню и список покупок</div>
+        <div class="task" style="font-size:9px">💬 Чат и поддержка Насти</div>
+        <div class="task" style="font-size:9px">📈 Трекинг замеров</div>
+      </div>
+      <p class="mt8 small">Блок преимуществ в ленте «Сегодня» дня 3 и в чек-ине дня 2.</p>
+      <div style="margin-top:auto"><code>marathon_offer_viewed</code></div>
+    </div>
+    <div class="card ink" style="display:flex;flex-direction:column">
+      <span class="tag" style="background:var(--coral);color:#fff">Касание 3 · финал</span>
+      <div style="font-family:var(--serif);font-size:22px;line-height:1.1;margin-top:12px">Ты сделала первые шаги. Теперь преврати их в <i style="color:var(--rose)">привычку за 21 день</i>.</div>
+      <div class="row mt12" style="align-items:baseline;gap:8px"><span style="font-size:24px;font-weight:800">2 490 ₽</span><span class="small" style="color:#A8989C">цена из админки</span></div>
+      <span class="s-btn coral mt8">Продолжить с UpGrade</span>
+      <div style="margin-top:12px"><code>marathon_checkout_clicked</code></div>
+    </div>
+  </div>
+
+  <div class="row mt24">
+    <div class="card col">
+      <h4>Можно</h4>
+      <ul class="clean">
+        <li>Карточки в ленте, которые можно пролистать</li>
+        <li>Честное сравнение «3 дня бесплатно → 21 день с поддержкой»</li>
+        <li>Отзывы реальных участниц (с согласия)</li>
+        <li>Постоянная тихая ссылка на вкладке «Прогресс»</li>
+        <li>Дожим в Telegram-боте после финала (1–2 сообщения)</li>
+      </ul>
+    </div>
+    <div class="card col" style="background:#F9EDEA;border-color:#EBC8BC">
+      <h4 style="color:var(--coral)">Нельзя</h4>
+      <ul class="clean">
+        <li>Всплывающие окна, перекрывающие задания</li>
+        <li>Фальшивые таймеры и «осталось 2 места», если это неправда</li>
+        <li>Блокировка бесплатных дней до оплаты</li>
+        <li>Обещания конкретного результата по весу</li>
+        <li>Больше одного оффера на одном экране</li>
+      </ul>
+    </div>
+  </div>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>10</span></div>
+</section>
+
+<!-- ======================= 11. DESIGN SYSTEM ======================= -->
+<section class="page">
+  <div class="rh"><span class="logo">Up<b>Grade</b></span><span>09 · Дизайн-система</span></div>
+  <div class="kicker mt24">09 · Дизайн-система</div>
+  <h2>Premium Wellness — <i>тёплый минимализм</i></h2>
+
+  <h4 class="mt16">Цвет</h4>
+  <div class="grid4">
+    <div><div class="sw" style="background:#F7F2EC"></div><div class="sw-l">Cream · фон</div><div class="sw-c">#F7F2EC</div></div>
+    <div><div class="sw" style="background:#2A2024"></div><div class="sw-l">Ink · текст, акцент</div><div class="sw-c">#2A2024</div></div>
+    <div><div class="sw" style="background:#D8735A"></div><div class="sw-l">Coral · CTA</div><div class="sw-c">#D8735A</div></div>
+    <div><div class="sw" style="background:#F3D9D0"></div><div class="sw-l">Blush · подложки</div><div class="sw-c">#F3D9D0</div></div>
+    <div><div class="sw" style="background:#AFC1AB"></div><div class="sw-l">Sage · успех</div><div class="sw-c">#AFC1AB / #6F8A6C</div></div>
+    <div><div class="sw" style="background:#5A3848"></div><div class="sw-l">Plum · премиум</div><div class="sw-c">#5A3848</div></div>
+    <div><div class="sw" style="background:#8FB3C9"></div><div class="sw-l">Water · трекер</div><div class="sw-c">#8FB3C9</div></div>
+    <div><div class="sw" style="background:#FFFDFB"></div><div class="sw-l">Paper · карточки</div><div class="sw-c">#FFFDFB</div></div>
+  </div>
+
+  <div class="row mt24" style="gap:18px">
+    <div class="col">
+      <h4>Типографика</h4>
+      <div class="card">
+        <div style="font-family:var(--serif);font-size:38px;line-height:1">Aa <i style="color:var(--coral)">Cormorant</i></div>
+        <div class="small mt4">Заголовки, цифры, эмоциональные фразы · 28–40 px</div>
+        <div class="divider"></div>
+        <div style="font-size:22px;font-weight:700">Aa Manrope</div>
+        <div class="small mt4">Интерфейс и текст · 400–800 · 15–17 px основной</div>
+        <div class="divider"></div>
+        <table class="t">
+          <tr><td>Display</td><td>Cormorant 40/44</td></tr>
+          <tr><td>H1</td><td>Cormorant 30/34</td></tr>
+          <tr><td>Title</td><td>Manrope 700 · 18/24</td></tr>
+          <tr><td>Body</td><td>Manrope 500 · 16/24</td></tr>
+          <tr><td>Caption</td><td>Manrope 600 · 12/16 · uppercase</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="col">
+      <h4>Компоненты</h4>
+      <div class="card">
+        <span class="s-btn coral">Основная кнопка · 56 px</span>
+        <span class="s-btn mt8">Вторичная тёмная</span>
+        <span class="s-btn ghost mt8">Контурная</span>
+        <div class="s-opt on mt12"><span class="em">🔥</span>Выбранный вариант<span class="rd"></span></div>
+        <div class="s-opt"><span class="em">🌿</span>Вариант ответа<span class="rd"></span></div>
+        <div class="task mt8"><span class="chk on"></span>Выполненное задание</div>
+        <div class="task"><span class="chk"></span>Задание</div>
+        <div class="s-bar mt12" style="height:6px"><span style="width:62%"></span></div>
+        <div class="row mt12" style="gap:6px"><span class="tag">Цель</span><span class="tag sage">Готово</span><span class="tag ink">День 2</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid3 mt16">
+    <div class="card soft"><h3>Сетка и формы</h3><p>Отступы 4·8·12·16·24. Боковые поля 20 px. Радиусы: карточки 20, кнопки 16, чипы 999. Тень одна — мягкая, тёплая.</p></div>
+    <div class="card soft"><h3>Движение</h3><p>200–300 мс, easing <code>cubic-bezier(.2,.8,.2,1)</code>. Галочка — «пружина», кольцо — плавное заполнение, конфетти — только на достижениях.</p></div>
+    <div class="card soft"><h3>Одна рука</h3><p>Зоны нажатия ≥ 48 px. Главные действия — в нижних 40% экрана. Учитываем safe-area iOS и тему Telegram.</p></div>
+  </div>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>11</span></div>
+</section>
+
+<!-- ======================= 12. UX RETENTION & CONVERSION ======================= -->
+<section class="page dark">
+  <div class="blob" style="width:360px;height:360px;background:#5A3848;opacity:.6;right:-140px;top:-120px"></div>
+  <div class="rh"><span class="logo" style="color:#fff">Up<b>Grade</b></span><span>10 · UX удержания</span></div>
+  <div class="kicker mt24">10 · UX удержания и конверсии</div>
+  <h2 style="color:#fff">Как довести до конца<br><i style="color:var(--rose)">и до оплаты</i></h2>
+  <p class="lead">Главный враг лид-магнита — «открыла и забыла». Каждая механика ниже отвечает на вопрос: почему человек вернётся завтра?</p>
+
+  <div class="grid2 mt24">
+    <div class="card" style="background:#352A2F;border-color:#47393F">
+      <h4 style="color:var(--rose)">Удержание</h4>
+      <ul class="clean">
+        <li><b style="color:#fff">Маленький первый шаг.</b> Первое задание — 12 минут, не час.</li>
+        <li><b style="color:#fff">Незавершённое кольцо.</b> 75% — сильный стимул закрыть день.</li>
+        <li><b style="color:#fff">Напоминания в боте</b> в выбранное время: утро — тренировка, вечер — отчёт.</li>
+        <li><b style="color:#fff">Интрига завтрашнего дня:</b> «Завтра Настя покажет упражнение для…»</li>
+        <li><b style="color:#fff">Восстановление после пропуска:</b> без наказания, тёплый текст «вернёмся вместе».</li>
+        <li><b style="color:#fff">Сохранение на сервере:</b> открыла с другого устройства — всё на месте.</li>
+      </ul>
+    </div>
+    <div class="card" style="background:#352A2F;border-color:#47393F">
+      <h4 style="color:var(--rose)">Конверсия</h4>
+      <ul class="clean">
+        <li><b style="color:#fff">Продажа на пике эмоции</b> — после тренировки и на финале.</li>
+        <li><b style="color:#fff">Бесшовная оплата</b> в Telegram (Payments / ЮKassa) без выхода из приложения.</li>
+        <li><b style="color:#fff">Бонус за прохождение:</b> например, промокод для завершивших 3 дня (настраивается в админке).</li>
+        <li><b style="color:#fff">Социальное доказательство:</b> реальные отзывы участниц марафона.</li>
+        <li><b style="color:#fff">Сегментный дожим в боте</b> — разный текст тем, кто кликнул, и тем, кто нет.</li>
+        <li><b style="color:#fff">Связь с целью:</b> «Твоя цель — подтянуть живот. В марафоне на это — 21 день».</li>
+      </ul>
+    </div>
+  </div>
+
+  <h4 class="mt24" style="color:#A8989C">Сценарий напоминаний (пример)</h4>
+  <table class="t" style="color:#E3D7D1">
+    <tr><th>Когда</th><th>Кому</th><th>Сообщение бота</th></tr>
+    <tr><td style="color:#E3D7D1">+2 ч после открытия</td><td style="color:#E3D7D1">не прошла онбординг</td><td style="color:#E3D7D1">«Твой дневник ждёт — осталась минута до старта»</td></tr>
+    <tr><td style="color:#E3D7D1">День N, утро</td><td style="color:#E3D7D1">все активные</td><td style="color:#E3D7D1">«День 2 открыт. Сегодня — 12 минут для себя»</td></tr>
+    <tr><td style="color:#E3D7D1">День N, 20:00</td><td style="color:#E3D7D1">не закрыла день</td><td style="color:#E3D7D1">«Осталось одно задание до 100% 💪»</td></tr>
+    <tr><td style="color:#E3D7D1">+1 день после финала</td><td style="color:#E3D7D1">не купила</td><td style="color:#E3D7D1">«Ты прошла 3 дня. Марафон стартует …»</td></tr>
+  </table>
+  <p class="small mt8" style="color:#A8989C">Отправка — только тем, кто запустил бота; частота ограничена, есть кнопка «Не напоминать».</p>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>12</span></div>
+</section>
+
+<!-- ======================= 13. TELEGRAM ======================= -->
+<section class="page">
+  <div class="rh"><span class="logo">Up<b>Grade</b></span><span>11 · Telegram</span></div>
+  <div class="kicker mt24">11 · Telegram-интеграция</div>
+  <h2>Безопасный вход <i>в один тап</i></h2>
+  <p class="lead">Сервер никогда не доверяет user_id, переданному клиентом. Личность подтверждается подписью Telegram <code>initData</code>, проверяемой на бэкенде через HMAC-SHA256 с токеном бота.</p>
+
+  <svg width="100%" height="232" viewBox="0 0 680 270" font-family="Manrope" style="margin-top:8px">
+    <g font-size="11" font-weight="700" text-anchor="middle">
+      <rect x="10" y="0" width="140" height="34" rx="12" fill="#2A2024"/><text x="80" y="21" fill="#fff">Пользователь</text>
+      <rect x="185" y="0" width="140" height="34" rx="12" fill="#5A3848"/><text x="255" y="21" fill="#fff">Telegram-бот</text>
+      <rect x="360" y="0" width="140" height="34" rx="12" fill="#D8735A"/><text x="430" y="21" fill="#fff">Mini App (Next.js)</text>
+      <rect x="535" y="0" width="140" height="34" rx="12" fill="#6F8A6C"/><text x="605" y="21" fill="#fff">API + БД</text>
+    </g>
+    <g stroke="#E7DCD1" stroke-dasharray="3 3"><line x1="80" y1="34" x2="80" y2="265"/><line x1="255" y1="34" x2="255" y2="265"/><line x1="430" y1="34" x2="430" y2="265"/><line x1="605" y1="34" x2="605" y2="265"/></g>
+    <defs><marker id="a2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#D8735A"/></marker></defs>
+    <g stroke="#D8735A" stroke-width="1.4" marker-end="url(#a2)">
+      <line x1="80" y1="58" x2="251" y2="58"/>
+      <line x1="255" y1="90" x2="601" y2="90"/>
+      <line x1="255" y1="122" x2="84" y2="122"/>
+      <line x1="80" y1="152" x2="426" y2="152"/>
+      <line x1="430" y1="184" x2="601" y2="184"/>
+      <line x1="605" y1="216" x2="434" y2="216"/>
+      <line x1="430" y1="248" x2="601" y2="248"/>
+    </g>
+    <g font-size="9.5" fill="#4A3D42">
+      <text x="166" y="52" text-anchor="middle">/start reels_0512 (источник)</text>
+      <text x="428" y="84" text-anchor="middle">сохранить пользователя + UTM, событие diary_opened</text>
+      <text x="168" y="116" text-anchor="middle">кнопка «Открыть дневник» (WebApp)</text>
+      <text x="253" y="146" text-anchor="middle">открытие Mini App, initData в контексте</text>
+      <text x="516" y="178" text-anchor="middle">POST /auth/telegram {initData}</text>
+      <text x="518" y="210" text-anchor="middle">HMAC ✓ · auth_date свежий → JWT-сессия</text>
+      <text x="516" y="242" text-anchor="middle">PUT /progress · POST /events</text>
+    </g>
+  </svg>
+
+  <div class="row mt12" style="gap:14px">
+    <div class="col">
+      <h4>События → бот</h4>
+      <table class="t">
+        <tr><th>Событие</th><th>Когда</th></tr>
+        <tr><td><code>diary_opened</code></td><td>первое открытие Mini App</td></tr>
+        <tr><td><code>onboarding_completed</code></td><td>пройден опрос</td></tr>
+        <tr><td><code>day_1_started</code></td><td>первое действие дня 1</td></tr>
+        <tr><td><code>workout_completed</code></td><td>завершена тренировка (+ day)</td></tr>
+        <tr><td><code>day_N_completed</code></td><td>закрыты все задания дня</td></tr>
+        <tr><td><code>marathon_offer_viewed</code></td><td>оффер в зоне видимости (+ номер)</td></tr>
+        <tr><td><code>marathon_checkout_clicked</code></td><td>клик на оплату</td></tr>
+        <tr><td><code>marathon_purchased</code></td><td>webhook платёжной системы</td></tr>
+      </table>
+    </div>
+    <div class="col">
+      <h4>Что предусмотрено</h4>
+      <div class="card">
+        <ul class="clean">
+          <li>Авторизация через Telegram WebApp <code>initData</code> (проверка подписи и срока)</li>
+          <li>Индивидуальная ссылка: <code>t.me/bot/diary?startapp=src_reels</code></li>
+          <li>Прогресс и ответы хранятся на сервере</li>
+          <li>Исходящий webhook событий в бот (с подписью)</li>
+          <li>Напоминания через Bot API с учётом часового пояса</li>
+          <li>Источник: start-параметр + UTM при открытии в браузере</li>
+          <li>Покупка подтверждается только серверным webhook оплаты</li>
+          <li>Браузер без Telegram: Login Widget или одноразовая ссылка из бота</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <h4 class="mt16">Проверка initData на сервере (TypeScript)</h4>
+  <pre class="code">import crypto from "node:crypto";
+
+export function verifyInitData(initData: string, botToken: string) {
+  const params = new URLSearchParams(initData);
+  const hash = params.get("hash"); params.delete("hash");
+  const dataCheck = [...params].sort(([a], [b]) =&gt; a.localeCompare(b))
+    .map(([k, v]) =&gt; `${k}=${v}`).join("\n");
+  const secret = crypto.createHmac("sha256", "WebAppData").update(botToken).digest();
+  const calc = crypto.createHmac("sha256", secret).update(dataCheck).digest("hex");
+  const fresh = Date.now() / 1000 - Number(params.get("auth_date")) &lt; 86400;
+  if (!hash || calc !== hash || !fresh) throw new Error("Invalid Telegram auth");
+  return JSON.parse(params.get("user")!);   // доверяем только после проверки
+}</pre>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>13</span></div>
+</section>
+
+<!-- ======================= 14. ANALYTICS ======================= -->
+<section class="page">
+  <div class="rh"><span class="logo">Up<b>Grade</b></span><span>12 · Аналитика</span></div>
+  <div class="kicker mt24">12 · Аналитика</div>
+  <h2>Воронка, которую <i>видно целиком</i></h2>
+  <p class="lead">Все метрики считаются из одной таблицы событий. Каждый шаг воронки — отношение уникальных пользователей с событием к пользователям предыдущего шага, с разрезом по источнику трафика.</p>
+
+  <div class="card mt16" style="padding:18px">
+    <h4>Схема воронки</h4>
+    <div style="display:flex;flex-direction:column;gap:5px;align-items:center;margin-top:6px">
+      <div style="width:100%;background:#2A2024;color:#fff" class="fn">Открыли дневник <span>diary_opened</span></div>
+      <div style="width:92%;background:#4A3040;color:#fff" class="fn">Завершили онбординг <span>onboarding_completed</span></div>
+      <div style="width:84%;background:#5A3848;color:#fff" class="fn">Начали день 1 <span>day_1_started</span></div>
+      <div style="width:76%;background:#9B5A55;color:#fff" class="fn">Завершили день 1 <span>day_1_completed</span></div>
+      <div style="width:68%;background:#C0674F;color:#fff" class="fn">Вернулись на день 2 <span>day_2_completed</span></div>
+      <div style="width:60%;background:#D8735A;color:#fff" class="fn">Вернулись на день 3 <span>day_3_completed</span></div>
+      <div style="width:52%;background:#E7AFA0;color:#2A2024" class="fn">Кликнули на оффер <span>checkout_clicked</span></div>
+      <div style="width:44%;background:#F3D9D0;color:#2A2024" class="fn">Оплатили <span>marathon_purchased</span></div>
+    </div>
+    <p class="small mt8 center">Ширина ступеней схематична и не отражает реальных данных — данные появятся после запуска.</p>
+  </div>
+  <style>.fn{border-radius:10px;padding:8px 14px;font-size:10.5px;font-weight:700;display:flex;justify-content:space-between}.fn span{font-family:"JetBrains Mono",monospace;font-weight:500;font-size:8.5px;opacity:.75}</style>
+
+  <div class="row mt16" style="gap:14px">
+    <div class="col">
+      <h4>10 метрик из ТЗ</h4>
+      <table class="t">
+        <tr><td>1</td><td>Открытия дневника</td></tr>
+        <tr><td>2</td><td>Конверсия в завершение онбординга</td></tr>
+        <tr><td>3</td><td>% начавших первый день</td></tr>
+        <tr><td>4</td><td>% завершивших первый день</td></tr>
+        <tr><td>5</td><td>Удержание на второй день</td></tr>
+        <tr><td>6</td><td>Удержание на третий день</td></tr>
+        <tr><td>7</td><td>% завершивших программу</td></tr>
+        <tr><td>8</td><td>CTR предложения марафона</td></tr>
+        <tr><td>9</td><td>Конверсия в оплату</td></tr>
+        <tr><td>10</td><td>Выручка по источникам трафика</td></tr>
+      </table>
+    </div>
+    <div class="col">
+      <h4>Источники и внешние системы</h4>
+      <div class="card">
+        <ul class="clean">
+          <li>UTM: <code>utm_source</code>, <code>utm_medium</code>, <code>utm_campaign</code>, <code>utm_content</code> (ID рилса)</li>
+          <li>Telegram <code>startapp</code> — источник внутри Telegram</li>
+          <li>First-touch атрибуция сохраняется в профиле пользователя</li>
+          <li>Подключаемые адаптеры: Яндекс Метрика, GA4, PostHog, Amplitude</li>
+          <li>CTR оффера = <code>checkout_clicked / offer_viewed</code></li>
+          <li>Выручка = сумма <code>marathon_purchased.amount</code> по <code>utm_source</code></li>
+        </ul>
+      </div>
+      <h4 class="mt12">Формат события</h4>
+<pre class="code">{
+  "name": "workout_completed",
+  "user_id": "u_…",
+  "props": { "day": 1, "duration_sec": 720 },
+  "source": "reels_0512",
+  "created_at": "2026-11-05T09:14:00Z"
+}</pre>
+    </div>
+  </div>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>14</span></div>
+</section>
+
+<!-- ======================= 15. ADMIN ======================= -->
+<section class="page blush">
+  <div class="rh"><span class="logo">Up<b>Grade</b></span><span>13 · Админ-панель</span></div>
+  <div class="kicker mt24">13 · Административная панель</div>
+  <h2>Управление <i>без разработчика</i></h2>
+  <p class="lead">Простой веб-интерфейс за отдельной ролью admin. Все тексты, видео, задания и цена хранятся в базе — изменения видны пользователям сразу, без релиза.</p>
+
+  <div class="desk mt16">
+    <div class="top"><i></i><i></i><i></i><span class="small" style="margin-left:10px">admin.upgrade.app / Марафон</span></div>
+    <div class="body">
+      <div class="side">
+        <div class="logo" style="color:#fff;font-size:13px;padding-bottom:10px">Up<b>Grade</b> <span style="font-weight:500;font-size:8px;color:#A8989C">admin</span></div>
+        <div>📊 Статистика</div>
+        <div>🎬 Тренировки</div>
+        <div>✅ Задания</div>
+        <div>✍️ Тексты</div>
+        <div class="on">💎 Марафон и оплата</div>
+        <div>👥 Пользователи</div>
+      </div>
+      <div class="main">
+        <div class="s-row" style="justify-content:space-between"><div class="s-t" style="font-size:13px">Марафон и оплата</div><span class="s-btn coral" style="padding:6px 14px;font-size:9px;border-radius:9px">Сохранить</span></div>
+        <div class="grid2 mt8" style="gap:10px">
+          <div>
+            <div class="field-l">Цена марафона, ₽</div><div class="field"><b>2 490</b></div>
+            <div class="field-l">Ссылка на оплату</div><div class="field">https://pay.example/upgrade-21</div>
+            <div class="field-l">Текст оффера №3</div><div class="field">Ты сделала первые шаги. Теперь преврати их в привычку за 21 день.</div>
+            <div class="field-l">Кнопка</div><div class="field">Продолжить с UpGrade</div>
+          </div>
+          <div>
+            <div class="field-l">Предпросмотр</div>
+            <div class="card ink" style="padding:12px">
+              <div style="font-family:var(--serif);font-size:15px;line-height:1.15">Ты сделала первые шаги. Теперь преврати их в <i style="color:var(--rose)">привычку за 21 день</i>.</div>
+              <div style="font-size:16px;font-weight:800;margin-top:8px">2 490 ₽</div>
+              <span class="s-btn coral mt8" style="font-size:9px;padding:7px 0">Продолжить с UpGrade</span>
+            </div>
+            <div class="field-l">Конверсия в покупку</div>
+            <div class="field" style="color:var(--muted)">появится после первых данных</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid3 mt16">
+    <div class="card"><h3>Контент</h3><ul class="clean"><li>Видеотренировки по дням, уровню и формату</li><li>Задания и их порядок</li><li>Все тексты и мотивации</li></ul></div>
+    <div class="card"><h3>Монетизация</h3><ul class="clean"><li>Цена марафона</li><li>Ссылки на оплату</li><li>Тексты трёх офферов</li><li>Промокоды (этап 2)</li></ul></div>
+    <div class="card"><h3>Статистика</h3><ul class="clean"><li>Воронка прохождения</li><li>Конверсия в покупку</li><li>Выручка по источникам</li><li>Фильтр по датам и UTM</li></ul></div>
+  </div>
+  <div class="row mt12" style="gap:12px">
+    <div class="card ink col"><h4 style="color:var(--rose)">Доступ</h4><p>Вход в админку — только для пользователей с ролью <code>admin</code>, назначаемой на сервере. Проверка роли — в API и политиках RLS, а не только в интерфейсе.</p></div>
+    <div class="card col"><h4>Журнал изменений</h4><p>Каждое изменение цены, ссылки или текста пишется в журнал: кто, когда, что было и что стало. Можно откатить неудачную правку.</p></div>
+  </div>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>15</span></div>
+</section>
+
+<!-- ======================= 16. TECH ======================= -->
+<section class="page">
+  <div class="rh"><span class="logo">Up<b>Grade</b></span><span>14 · Техника</span></div>
+  <div class="kicker mt24">14 · Техническая архитектура</div>
+  <h2>Стек и <i>модель данных</i></h2>
+
+  <div class="grid4 mt16">
+    <div class="card center"><div style="font-size:22px">⚛️</div><h3 class="mt4">Next.js + React</h3><p class="small">App Router, SSR для скорости, Mini App</p></div>
+    <div class="card center"><div style="font-size:22px">🎨</div><h3 class="mt4">Tailwind CSS</h3><p class="small">токены дизайн-системы, Framer Motion</p></div>
+    <div class="card center"><div style="font-size:22px">🔷</div><h3 class="mt4">TypeScript</h3><p class="small">общие типы клиента и API, Zod</p></div>
+    <div class="card center"><div style="font-size:22px">🐘</div><h3 class="mt4">Supabase / PostgreSQL</h3><p class="small">RLS, серверный API, бэкапы</p></div>
+  </div>
+
+  <h4 class="mt16">Инфраструктура</h4>
+  <div class="card" style="padding:12px">
+  <svg width="100%" height="120" viewBox="0 0 640 120" font-family="Manrope">
+    <defs><marker id="a3" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#D8735A"/></marker></defs>
+    <g stroke="#D8735A" stroke-width="1.4" marker-end="url(#a3)" fill="none">
+      <line x1="130" y1="60" x2="196" y2="60"/><line x1="330" y1="60" x2="396" y2="60"/>
+      <path d="M470 38 V20 H560 V36"/><path d="M470 82 V100 H560 V86"/>
+    </g>
+    <g text-anchor="middle" font-weight="700" font-size="11">
+      <rect x="0" y="34" width="130" height="52" rx="14" fill="#2A2024"/><text x="65" y="57" fill="#fff">Telegram</text><text x="65" y="73" fill="#C9B8B2" font-size="9" font-weight="500">бот · Mini App</text>
+      <rect x="200" y="34" width="130" height="52" rx="14" fill="#D8735A"/><text x="265" y="57" fill="#fff">Next.js</text><text x="265" y="73" fill="#FBE6DF" font-size="9" font-weight="500">UI + API routes</text>
+      <rect x="400" y="34" width="130" height="52" rx="14" fill="#6F8A6C"/><text x="465" y="57" fill="#fff">PostgreSQL</text><text x="465" y="73" fill="#E5ECE1" font-size="9" font-weight="500">Supabase · RLS</text>
+      <text x="600" y="30" fill="#2A2024" font-size="10">Платежи</text><text x="600" y="44" fill="#8C7E82" font-size="8.5" font-weight="500">webhook</text>
+      <text x="600" y="90" fill="#2A2024" font-size="10">Аналитика</text><text x="600" y="104" fill="#8C7E82" font-size="8.5" font-weight="500">Метрика · GA4</text>
+    </g>
+  </svg>
+  </div>
+
+  <h4 class="mt16">Основные таблицы</h4>
+  <div class="grid3">
+    <div class="card"><h3><code>users</code></h3><p class="small">id, telegram_id (unique), first_name, timezone, role (user/admin), utm_*, start_param, created_at</p></div>
+    <div class="card"><h3><code>profiles</code></h3><p class="small">user_id, goal, level, format, weight?, waist?, hips?, onboarded_at</p></div>
+    <div class="card"><h3><code>day_progress</code></h3><p class="small">user_id, day (1–3), tasks jsonb, water, steps, mood, checkin jsonb, completed_at</p></div>
+    <div class="card"><h3><code>achievements</code></h3><p class="small">user_id, code, unlocked_at</p></div>
+    <div class="card"><h3><code>events</code></h3><p class="small">id, user_id, name, props jsonb, source, created_at — основа аналитики</p></div>
+    <div class="card"><h3><code>content / settings</code></h3><p class="small">тренировки, задания, тексты, цена, ссылки на оплату — редактируются в админке</p></div>
+  </div>
+
+  <div class="row mt16" style="gap:14px">
+    <div class="card col">
+      <h4>Безопасность и данные</h4>
+      <ul class="clean">
+        <li>Проверка <code>initData</code> только на сервере; токен бота — в секретах</li>
+        <li>Разграничение ролей user / admin, Row Level Security</li>
+        <li>HTTPS везде, httpOnly-сессии, rate limiting</li>
+        <li>Замеры тела — персональные данные: минимум полей, согласие, удаление по запросу (152-ФЗ)</li>
+      </ul>
+    </div>
+    <div class="card col">
+      <h4>Производительность</h4>
+      <ul class="clean">
+        <li>Первый экран &lt; 1.5 с на 4G; шрифты и постеры видео — оптимизированы</li>
+        <li>Оптимистичные обновления: галочка ставится мгновенно, синхронизация в фоне</li>
+        <li>Тестирование в Telegram на iOS и Android, safe-area, тёмная тема</li>
+        <li>Масштабирование: stateless API, CDN для видео</li>
+      </ul>
+    </div>
+  </div>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>16</span></div>
+</section>
+
+<!-- ======================= 17. MVP ======================= -->
+<section class="page">
+  <div class="rh"><span class="logo">Up<b>Grade</b></span><span>14 · MVP</span></div>
+  <div class="kicker mt24">14 · План запуска</div>
+  <h2>От MVP к <i>полной версии</i></h2>
+  <p class="lead">Сначала — рабочий продукт с реальными сценариями и сохранением данных. Там, где интеграций пока нет, используются демонстрационные данные с явной пометкой «демо».</p>
+
+  <div class="row mt24" style="gap:12px;align-items:stretch">
+    <div class="card col" style="border:2px solid var(--coral)">
+      <span class="tag" style="background:var(--coral);color:#fff">Этап 1 · MVP</span>
+      <h3 class="mt8">Работающий дневник</h3>
+      <div class="task done" style="text-decoration:none;color:var(--ink2)"><span class="chk on"></span>Онбординг</div>
+      <div class="task" style="font-weight:500"><span class="chk on"></span>Персональный главный экран</div>
+      <div class="task" style="font-weight:500"><span class="chk on"></span>Три дня программы</div>
+      <div class="task" style="font-weight:500"><span class="chk on"></span>Видеотренировки</div>
+      <div class="task" style="font-weight:500"><span class="chk on"></span>Чек-листы</div>
+      <div class="task" style="font-weight:500"><span class="chk on"></span>Сохранение прогресса</div>
+      <div class="task" style="font-weight:500"><span class="chk on"></span>Финальный экран</div>
+      <div class="task" style="font-weight:500"><span class="chk on"></span>Переход к покупке</div>
+      <div class="task" style="font-weight:500"><span class="chk on"></span>Базовая аналитика</div>
+    </div>
+    <div class="card col">
+      <span class="tag sage">Этап 2 · Рост</span>
+      <h3 class="mt8">Вовлечённость</h3>
+      <div class="task" style="font-weight:500"><span class="chk"></span>Достижения и серия</div>
+      <div class="task" style="font-weight:500"><span class="chk"></span>Расширенные трекеры</div>
+      <div class="task" style="font-weight:500"><span class="chk"></span>Административная панель</div>
+      <div class="task" style="font-weight:500"><span class="chk"></span>Напоминания из бота</div>
+      <div class="task" style="font-weight:500"><span class="chk"></span>Оплата внутри Telegram</div>
+      <div class="task" style="font-weight:500"><span class="chk"></span>Карточка-итог для сторис</div>
+    </div>
+    <div class="card col">
+      <span class="tag line">Этап 3 · Оптимизация</span>
+      <h3 class="mt8">Конверсия</h3>
+      <div class="task" style="font-weight:500"><span class="chk"></span>A/B-тесты офферов</div>
+      <div class="task" style="font-weight:500"><span class="chk"></span>Промокоды и бонусы</div>
+      <div class="task" style="font-weight:500"><span class="chk"></span>Сегментный дожим</div>
+      <div class="task" style="font-weight:500"><span class="chk"></span>Внешняя аналитика</div>
+      <div class="task" style="font-weight:500"><span class="chk"></span>Новые программы-магниты</div>
+    </div>
+  </div>
+
+  <h4 class="mt24">Критерии готовности MVP</h4>
+  <div class="grid2">
+    <div class="card soft"><p>✓ Пользователь проходит путь бот → онбординг → 3 дня → финал → оплата без ошибок на iOS и Android.</p></div>
+    <div class="card soft"><p>✓ Прогресс сохраняется на сервере и восстанавливается при повторном открытии.</p></div>
+    <div class="card soft"><p>✓ Авторизация только через проверенный сервером initData.</p></div>
+    <div class="card soft"><p>✓ Все события из списка пишутся в БД и видны в отчёте по воронке.</p></div>
+  </div>
+
+  <h4 class="mt24">Что в MVP рабочее, а что — демо</h4>
+  <table class="t card" style="padding:0">
+    <tr><th>Функция</th><th>Статус в MVP</th><th>Что нужно для боевого режима</th></tr>
+    <tr><td>Онбординг, дни, чек-листы, прогресс</td><td><span class="tag sage">рабочее</span></td><td>—</td></tr>
+    <tr><td>Авторизация Telegram</td><td><span class="tag sage">рабочее</span></td><td>токен бота в секретах сервера</td></tr>
+    <tr><td>Видеотренировки</td><td><span class="tag">демо-видео</span></td><td>загрузить видео Насти</td></tr>
+    <tr><td>Оплата марафона</td><td><span class="tag">демо-ссылка</span></td><td>подключить ЮKassa / Telegram Payments + webhook</td></tr>
+    <tr><td>Передача событий в бот</td><td><span class="tag sage">рабочее</span></td><td>URL и секрет webhook бота</td></tr>
+  </table>
+  <div class="rf"><span>UpGrade · Фитнес-дневник</span><span>17</span></div>
+</section>
+
+<!-- ======================= 18. BACK COVER ======================= -->
+<section class="page dark" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center">
+  <div class="blob" style="width:480px;height:480px;background:#5A3848;opacity:.55;left:-160px;top:-160px"></div>
+  <div class="blob" style="width:300px;height:300px;background:#D8735A;opacity:.25;right:-80px;bottom:-60px"></div>
+  <div style="position:relative">
+    <div class="logo" style="font-size:44px;color:#fff">Up<b>Grade</b></div>
+    <div style="font-family:var(--serif);font-size:44px;line-height:1.05;margin-top:28px;color:#fff">Ты сделала первые шаги.<br><i style="color:var(--rose)">Теперь преврати их<br>в привычку.</i></div>
+    <p class="lead" style="margin:24px auto 0;max-width:110mm">3 дня бесплатного дневника → 21 день марафона с тренировками, питанием и поддержкой.</p>
+    <div class="row" style="gap:10px;justify-content:center;margin-top:28px">
+      <span class="tag" style="background:var(--coral);color:#fff">Красота</span>
+      <span class="tag" style="background:#3A2E33;color:#F3D9D0">Простота</span>
+      <span class="tag" style="background:#3A2E33;color:#F3D9D0">Вовлечённость</span>
+      <span class="tag" style="background:#3A2E33;color:#F3D9D0">Удержание</span>
+      <span class="tag" style="background:#3A2E33;color:#F3D9D0">Конверсия</span>
+    </div>
+  </div>
+  <div class="rf"><span>UpGrade · Продуктовый гайд</span><span>2026</span></div>
+</section>
+
+<script>
+document.querySelectorAll('[data-ring]').forEach(el => {
+  const p = +el.dataset.ring, s = +el.dataset.size, sw = Math.max(4, s/10), r = (s - sw)/2, c = 2*Math.PI*r;
+  el.style.width = s+'px'; el.style.height = s+'px'; el.style.position = el.style.position || 'relative';
+  el.innerHTML = `<svg width="${s}" height="${s}" viewBox="0 0 ${s} ${s}">
+    <circle cx="${s/2}" cy="${s/2}" r="${r}" fill="none" stroke="${el.dataset.bg}" stroke-width="${sw}"/>
+    <circle cx="${s/2}" cy="${s/2}" r="${r}" fill="none" stroke="${el.dataset.c}" stroke-width="${sw}" stroke-linecap="round"
+      stroke-dasharray="${c*p/100} ${c}" transform="rotate(-90 ${s/2} ${s/2})"/>
+    <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="${s/4.2}" fill="${el.dataset.tc||'#2A2024'}">${el.dataset.txt||''}</text></svg>`;
+});
+</script>
+</body>
+</html>
